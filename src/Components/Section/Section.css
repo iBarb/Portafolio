@@ -1,0 +1,15 @@
+.section{
+    scroll-margin: 5rem;
+    max-width: 56rem;
+    width: 80%;
+}
+
+@media (max-width: 576px) {
+    .section{
+        scroll-margin: 5rem;
+        max-width: 56rem;
+        width: 90%;
+    }
+    
+    
+}

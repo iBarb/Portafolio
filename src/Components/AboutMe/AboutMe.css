@@ -1,0 +1,26 @@
+.aboutme{
+    margin-top: calc(6rem * calc(1 - 0));
+    margin-bottom: calc(6rem * 0);
+}
+
+.aboutme h2 {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    column-gap: .5rem;
+    color: rgb(255 255 255);
+    align-items: center;
+    margin-bottom: 1.5rem;
+    display: flex;
+}
+
+.aboutme article div{
+    text-wrap: pretty;
+}
+
+.aboutme article div p{
+    margin-bottom: 1rem;
+}
+
+.aboutme article div strong{
+    color: var(--primary-color);
+}
