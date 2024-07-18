@@ -12,7 +12,6 @@ const Sections = ({ children, id, setCurrentSection, className}) => {
       if (section) {
         const rect = section.getBoundingClientRect();
         if (rect.top >= 0 && rect.top <= scrollRef && rect.bottom <= scrollRef) {
-          console.log(`#${id}`);
           const sectionId = `#${id}`;
           setCurrentSection(sectionId);  
         }
