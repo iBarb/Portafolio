@@ -41,9 +41,30 @@ const Navbar = ({ CurrentSection, setCurrentSection }) => {
 
   const handleScroll = () => {
     setScrollY(window.scrollY);
+    
+    const sections = document.querySelectorAll(".section");
+    const windowHeight = window.innerHeight;
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    const clientHeight = document.documentElement.clientHeight;
+    const scrolledToBottom = Math.ceil(scrollTop + clientHeight) >= document.documentElement.scrollHeight;
+    const activeSections = [];
+
+    sections.forEach((section) => {
+      const rect = section.getBoundingClientRect();
+      if (rect.top >= 0 && rect.bottom <= windowHeight) {
+        activeSections.push(`#${section.id}`);
+      }
+    });
+
+    if (activeSections.length) {
+      const sectionToSet = scrolledToBottom && activeSections.length > 1 ? activeSections[1] : activeSections[0];
+      setCurrentSection(sectionToSet);
+    }
   };
 
+
   useEffect(() => {
+    handleScroll()
     window.addEventListener('scroll', handleScroll);
     return () => {
       window.removeEventListener('scroll', handleScroll);

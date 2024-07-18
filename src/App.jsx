@@ -31,10 +31,10 @@ function App() {
     <>
       <Navbar CurrentSection={CurrentSection} setCurrentSection={setCurrentSection} />
       <main>
-        <Welcome setCurrentSection={setCurrentSection} />
-        <Works setCurrentSection={setCurrentSection} />
-        <Projects setCurrentSection={setCurrentSection} />
-        <AboutMe setCurrentSection={setCurrentSection}/>
+        <Welcome />
+        <Works />
+        <Projects />
+        <AboutMe/>
       </main>
       <footer className='footer-page'>
         <div>
