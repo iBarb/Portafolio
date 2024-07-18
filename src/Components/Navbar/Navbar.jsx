@@ -61,8 +61,8 @@ const Navbar = ({ CurrentSection, setCurrentSection }) => {
           backgroundColor: `rgba(var(--bg-nav), ${0.4 * opacity})`,
           border: `1px solid rgba(255, 255, 255, ${0.3 * opacity})`,
           boxShadow: `
-                rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
-                rgba(0, 0, 0, 0.3) 0px 3px 7px -3px`,
+                rgba(50, 50, 93, ${0.25 * opacity}) 0px 6px 12px -2px,
+                rgba(0, 0, 0, ${0.3 * opacity}) 0px 3px 7px -3px`,
           backdropFilter: `blur(${4.5 * opacity}px)`,
           WebkitBackdropFilter: `blur(${4.5 * opacity}px)`,
           transition: 'all 0.2s ease-in-out'
