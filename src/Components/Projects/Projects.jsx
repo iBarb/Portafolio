@@ -13,21 +13,25 @@ const Projects = ({ setCurrentSection }) => {
 
     const TAGS = {
         PYTHON: {
+            id: 1,
             name: "Python",
             className: "bg-blue text-white",
             icon: <Python width={16} height={16} />
         },
         HUGGING_FACE: {
+            id: 2,
             name: "Hugging Face",
             className: "bg-blue text-white",
             icon: <HuggingFace width={10} height={10} />
         },
         JAVASCRIPT: {
+            id: 3,
             name: "JavaScript",
             className: "bg-blue text-white",
             icon: <JavaScript width={10} height={10} />
         },
         SQLSERVER: {
+            id: 4,
             name: "SQL Server",
             className: "bg-blue text-white",
             icon: <MicrosoftSQLServer width={10} height={10} />
@@ -73,10 +77,10 @@ const Projects = ({ setCurrentSection }) => {
                             <div className='info'>
                                 <h3 className='title'>{p.title}</h3>
                                 <ul className='tags'>
-                                    {p.tags.map((tag, i) => (
-                                        <span key={i} className={tag.className}>
+                                    {p.tags && p.tags.map((tag) => (
+                                        <li key={tag.id} className={tag.className}>
                                             {tag.icon} {tag.name}
-                                        </span>
+                                        </li>
                                     ))}
                                 </ul>
                                 <p className='description'>{p.description}</p>
