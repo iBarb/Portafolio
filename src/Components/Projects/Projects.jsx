@@ -45,7 +45,7 @@ const Projects = ({ setCurrentSection }) => {
             description: "Desarrollo de un modelo de procesamiento de lenguaje natural (NLP) para la traducción entre español y quechua utilizando un modelo preentrenado de Helsinki-NLP/opus-mt-es-en.",
             link: "",
             github: "https://github.com/iBarb/Machine-Translation-Es-Qu",
-            image: "/projects/Taduccion-es-qu.jpg",
+            image: "/projects/Taduccion-es-qu.webp",
             tags: [TAGS.PYTHON, TAGS.HUGGING_FACE]
         },
         {
@@ -54,7 +54,7 @@ const Projects = ({ setCurrentSection }) => {
             description: "Desarrollo de un sistema integral utilizando Google Maps para la localización de estaciones de monitoreo y puntos de acopio, además de realizar seguimiento meteorológico. Incluye una plataforma de visualización de datos con diagramas Stiff para análisis de calidad del agua, y mapas de calor para gestionar situaciones de excedencia.",
             link: "https://www.linkedin.com/posts/eco2biz_la-importancia-de-la-informaci%C3%B3n-georeferencial-activity-7163396183825047553-S_X7?utm_source=share&utm_medium=member_desktop",
             github: "",
-            image: "/projects/Google Maps Module.png",
+            image: "/projects/Google Maps Module.webp",
             tags: [TAGS.JAVASCRIPT, TAGS.SQLSERVER]
         }
     ]
