@@ -90,7 +90,7 @@ ul {
 
 
 .h-screen {
-    height: 180%;
+    height: 120%;
 }
 
 .w-screen {
@@ -99,7 +99,6 @@ ul {
 
 .bg-neutral-950 {
     background-color: var(--bg-color)
-        /* Ajusta el color según tu paleta de colores */
 }
 
 .bg {
