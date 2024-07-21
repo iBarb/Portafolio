@@ -51,12 +51,13 @@ const Navbar = ({ CurrentSection, setCurrentSection }) => {
 
     sections.forEach((section) => {
       const rect = section.getBoundingClientRect();
-      if (rect.top >= 0 && rect.bottom <= windowHeight) {
+      if (rect.top >= 0 && rect.top <= windowHeight) {
         activeSections.push(`#${section.id}`);
       }
     });
 
     if (activeSections.length) {
+      console.log(activeSections);
       const sectionToSet = scrolledToBottom && activeSections.length > 1 ? activeSections[1] : activeSections[0];
       setCurrentSection(sectionToSet);
     }
