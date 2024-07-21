@@ -57,7 +57,6 @@ const Navbar = ({ CurrentSection, setCurrentSection }) => {
     });
 
     if (activeSections.length) {
-      console.log(activeSections);
       const sectionToSet = scrolledToBottom && activeSections.length > 1 ? activeSections[1] : activeSections[0];
       setCurrentSection(sectionToSet);
     }
