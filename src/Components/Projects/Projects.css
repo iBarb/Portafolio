@@ -47,9 +47,11 @@
 }
 
 .Projects article .out-img img {
+    height: 100%;
     width: 100%;
     position: absolute;
     transition: all 0.5s;
+    object-fit: cover;
 }
 
 .Projects article .info{
@@ -66,10 +68,12 @@
 .Projects article .info .description{
     color: rgb(156 163 175);
     margin-top: .5rem;
+    white-space: pre-line;
 }
 
 .Projects article .info footer{
     display: flex;
+    gap: .5rem;
 }
 
 .Projects article .info footer .link{
