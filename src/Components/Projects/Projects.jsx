@@ -76,7 +76,7 @@ const Projects = ({ setCurrentSection }) => {
             title: "Sistema de Asesorias UTP - EducaUTP",
             description: "Diseño de una aplicación web para gestionar asesorias en la UTP, utilizando React Context para la autenticación segura y manejo avanzado de estados, Firebase para almacenamiento en tiempo real, y diseñé una interfaz intuitiva y responsive.Además, manejo de variables de entorno para keys",
             link: "https://educautp.web.app/",
-            github: "https://github.com/iBarb/EducaUTP",
+            github: "https://github.com/iBarb/EducaUTP-Web",
             image: "/projects/educaUTP.webp",
             tags: [TAGS.REACT, TAGS.FIREBASE]
         }
