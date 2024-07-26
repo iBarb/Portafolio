@@ -1,4 +1,4 @@
-import { createContext, useContext, useState } from "react";
+import { createContext, useContext, useEffect, useState } from "react";
 import { EN, ES } from "../Utils/Constants";
 
 const AppContext = createContext(null);
@@ -8,6 +8,7 @@ export function useApp() {
 }
 
 export function AppProvider({ children }) {
+    const [isTransitioning, setIsTransitioning] = useState(false);
 
     const [language, setLanguage] = useState(() => {
         const userLanguage = navigator.language || navigator.userLanguage;
@@ -15,15 +16,22 @@ export function AppProvider({ children }) {
     });
 
     const toggleLanguage = () => {
-        setLanguage(language === 'ES' ? 'EN' : 'ES');
+        setIsTransitioning(true);
+
+        const timer = setTimeout(() => {
+            setIsTransitioning(false);
+            setLanguage(language === 'ES' ? 'EN' : 'ES');
+        }, 300);
     }
 
     const CONTENT = language === 'ES' ? ES : EN;
 
+
     const value = {
         language,
         toggleLanguage,
-        CONTENT
+        CONTENT,
+        isTransitioning
     }
 
     return (

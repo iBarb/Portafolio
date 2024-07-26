@@ -6,9 +6,13 @@ import Projects from './Components/Projects/Projects';
 import AboutMe from './Components/AboutMe/AboutMe';
 import Footer from './Components/Footer/Footer';
 import Options from './Components/Options/Options';
+import { useApp } from './Context/AppContext';
 
 function App() {
+  const { isTransitioning } = useApp()
+
   const [CurrentSection, setCurrentSection] = useState(null)
+
 
   useEffect(() => {
     const onSectionChange = () => {
@@ -26,18 +30,19 @@ function App() {
   }, []);
 
 
-
   return (
     <>
-      <Navbar CurrentSection={CurrentSection} setCurrentSection={setCurrentSection} />
-      <main>
-        <Welcome/>
-        <Works/>
-        <Projects/>
-        <AboutMe/>
-      </main>
-      <Footer/>
-      <Options/>
+      <div className={`content ${isTransitioning ? 'fade-out' : 'fade-in'}`}>
+        <Navbar CurrentSection={CurrentSection} setCurrentSection={setCurrentSection} />
+        <main>
+          <Welcome />
+          <Works />
+          <Projects />
+          <AboutMe />
+        </main>
+        <Footer />
+      </div>
+      <Options />
     </>
   )
 }

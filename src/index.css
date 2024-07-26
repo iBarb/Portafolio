@@ -75,6 +75,20 @@ ul {
     color: #c5c5c5
 }
 
+.content{
+    transition: all .3s;
+}
+
+.content.fade-out{
+    opacity: 0;
+}
+
+.content.fade-in{
+    opacity: 1;
+}
+
+
+
 
 
 /* BG */
