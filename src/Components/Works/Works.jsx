@@ -2,27 +2,21 @@ import React from 'react'
 import Section from '../Section/Section'
 import './Works.css'
 import Work from '../../Icons/Work'
+import { useApp } from '../../Context/AppContext'
 
 const Works = ({ setCurrentSection }) => {
-
-    const EXPERIENCE = [{
-        id:1,
-        title: "Desarrollador Web",
-        subtitle: "Eco2biz",
-        description: "Responsable de la implementación de un modulo con Google Maps para reducir el tiempo de ubicación de estaciones de monitoreo, la creación de un asistente virtual con IA para acelerar la eficiencia de búsqueda de documentos a travez de preguntas con leguaje natural y Diseño de un mapa meteorológico para visualización de resultados de monitoreo y análisis de datos.",
-        date: "Oct. 2022 - Dic. 2023",
-    }]
+    const { CONTENT } = useApp()
 
     return (
 
-        <Section className='Works' id='experiencia' setCurrentSection={setCurrentSection}>
+        <Section className='Works' id={CONTENT.EXPERIENCE.id} setCurrentSection={setCurrentSection}>
             <h2>
                 <Work width={32} height={32} />
-                Experiencia laboral
+                {CONTENT.EXPERIENCE.heading}
             </h2 >
 
             <ol className="timeline">
-                {EXPERIENCE.map((w) => {
+                {CONTENT.EXPERIENCE.TIMELINE.map((w) => {
                     return (
                         <li key={w.id}>
                             <div className="timeline-item">

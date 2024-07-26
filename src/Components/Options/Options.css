@@ -1,0 +1,48 @@
+.options{
+    position: fixed;
+    left: auto;
+    top: auto;
+    bottom: 1rem;
+    right: 1rem;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(226, 91, 91);
+
+
+}
+
+
+.options .menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: auto;
+    left: auto;
+    right: 0;
+    bottom: 0;
+    background-color: var(--primary-color);
+    border-radius: 9999px;
+    cursor: pointer;
+    position: absolute;
+    z-index: 10;
+    width: 40px;
+    height: 40px;
+}    
+
+.options .menu-item {
+    top: auto;
+    left: auto;
+    right: 0;
+    bottom: 0;
+    border-radius: 9999px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: black;
+    position: absolute;
+    transition: all .3s ease-in-out;
+    overflow: hidden;
+}

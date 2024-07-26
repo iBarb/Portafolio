@@ -1,40 +1,14 @@
 import React, { useEffect, useState } from 'react'
 import './Navbar.css'
+import { useApp } from '../../Context/AppContext';
 
 const Navbar = ({ CurrentSection, setCurrentSection }) => {
+
+  const { CONTENT } = useApp()
 
   const HandleActiveLink = (href) => {
     return CurrentSection === href ? 'active' : ''
   };
-
-
-  const LINKS = [
-    {
-      id: 1,
-      name: "Inicio",
-      href: "#"
-    },
-    {
-      id: 2,
-      name: "Experiencia",
-      href: "#experiencia"
-    },
-    {
-      id: 3,
-      name: "Proyectos",
-      href: "#proyectos"
-    },
-    {
-      id: 4,
-      name: "Sobre mí",
-      href: "#sobre-mi"
-    },
-    {
-      id: 5,
-      name: "Contacto",
-      href: "mailto:brunobarbaran@hotmail.com"
-    }
-  ]
 
 
   const [scrollY, setScrollY] = useState(0);
@@ -89,7 +63,7 @@ const Navbar = ({ CurrentSection, setCurrentSection }) => {
           transition: 'all 0.2s ease-in-out'
         }}
       >
-        {LINKS.map((l) => (
+        {CONTENT.LINKS.map((l) => (
           <a
             key={l.id}
             className={`link ${HandleActiveLink(l.href)}`}

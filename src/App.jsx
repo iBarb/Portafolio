@@ -5,6 +5,7 @@ import Works from './Components/Works/Works';
 import Projects from './Components/Projects/Projects';
 import AboutMe from './Components/AboutMe/AboutMe';
 import Footer from './Components/Footer/Footer';
+import Options from './Components/Options/Options';
 
 function App() {
   const [CurrentSection, setCurrentSection] = useState(null)
@@ -36,6 +37,7 @@ function App() {
         <AboutMe/>
       </main>
       <Footer/>
+      <Options/>
     </>
   )
 }
