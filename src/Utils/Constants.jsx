@@ -50,25 +50,6 @@ export const TAGS = {
     },
 }
 
-
-export const NETWORKS = [
-    {
-        href: 'https://www.linkedin.com/in/bruno-paolo-barbaran-quiroz-606478195/',
-        label: 'LinkedIn',
-        icon: <LinkedIn width={18} height={18} />
-    },
-    {
-        href: 'https://github.com/iBarb',
-        label: 'Github',
-        icon: <Github width={18} height={18} />
-    },
-    {
-        href: '/CV_Bruno_Barbaran.pdf',
-        label: 'CV',
-        icon: <CV width={18} height={18} />
-    }
-]
-
 export const ES = {
     LINKS: [
         {
@@ -101,6 +82,24 @@ export const ES = {
         id: '',
         heading: '¡Hola, soy Bruno!',
         description: '<strong>Ingeniero de Software</strong> de Perú. Me especializo en <strong>desarrollo Front-end</strong>, pero actualmente me estoy enfocando más en <strong>inteligencia artificial</strong> y aprendiendo nuevas tecnologías para potenciar mi crecimiento profesional.',
+        NETWORKS: [
+            {
+                href: 'https://www.linkedin.com/in/bruno-paolo-barbaran-quiroz-606478195/',
+                label: 'LinkedIn',
+                icon: <LinkedIn width={18} height={18} />
+            },
+            {
+                href: 'https://github.com/iBarb',
+                label: 'Github',
+                icon: <Github width={18} height={18} />
+            },
+            {
+                href: '/CV_Bruno_Barbaran.pdf',
+                label: 'CV',
+                icon: <CV width={18} height={18} />
+            }
+        ]
+        
     },
     EXPERIENCE: {
         id: 'experiencia',
@@ -186,6 +185,23 @@ export const EN = {
         id: '',
         heading: 'Hey, I’m Bruno!',
         description: '<strong>Software Engineer</strong> from Peru. I specialize in <strong>Front-end development</strong>, but I am currently focusing more on <strong>artificial intelligence</strong> and learning new technologies to enhance my professional growth.',
+        NETWORKS: [
+            {
+                href: 'https://www.linkedin.com/in/bruno-paolo-barbaran-quiroz-606478195/',
+                label: 'LinkedIn',
+                icon: <LinkedIn width={18} height={18} />
+            },
+            {
+                href: 'https://github.com/iBarb',
+                label: 'Github',
+                icon: <Github width={18} height={18} />
+            },
+            {
+                href: '/CV_Bruno_Barbaran_en.pdf',
+                label: 'CV',
+                icon: <CV width={18} height={18} />
+            }
+        ]
     },
     EXPERIENCE: {
         id: 'experience',

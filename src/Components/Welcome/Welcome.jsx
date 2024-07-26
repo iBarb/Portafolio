@@ -2,7 +2,6 @@ import React from 'react'
 import Section from '../Section/Section'
 import './Welcome.css'
 import Avatar from '../../Assets/avatar.jpg'
-import { NETWORKS } from '../../Utils/Constants'
 import { useApp } from '../../Context/AppContext'
 
 const Welcome = ({ setCurrentSection }) => {
@@ -20,7 +19,7 @@ const Welcome = ({ setCurrentSection }) => {
                 </div>
             </div>
             <div className='Networks'>
-                {NETWORKS.map((network, index) => (
+                {CONTENT.WELCOME.NETWORKS.map((network, index) => (
                     <a
                         key={index}
                         href={network.href}
