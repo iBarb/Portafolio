@@ -56,7 +56,7 @@ const Projects = ({ setCurrentSection }) => {
         {
             id: 1,
             title: "Modelo NLP para Traducción Es-Qu",
-            description: "Desarrollo de un modelo de procesamiento de lenguaje natural (NLP) para la traducción entre español y quechua utilizando un modelo preentrenado de Helsinki-NLP/opus-mt-es-en.",
+            description: "Se realizó una investigación para desarrollar y optimizar las traducciones entre español - quechua utilizando un modelo de procesamiento de lenguaje natural (NLP) preentrenado de Helsinki-NLP/opus-mt-es-en. Se utilizó Optuna para la optimización de hiperparámetros, con un enfoque en refinar los parámetros del modelo para mejorar la precisión de la traducción.",
             link: "",
             github: "https://github.com/iBarb/Machine-Translation-Es-Qu",
             image: "/projects/Taduccion-es-qu.webp",
