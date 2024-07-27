@@ -11,7 +11,13 @@ export function AppProvider({ children }) {
     const [isTransitioning, setIsTransitioning] = useState(false);
 
     const [language, setLanguage] = useState(() => {
+        const storageLanguage = localStorage.getItem("language");
         const userLanguage = navigator.language || navigator.userLanguage;
+
+        if (storageLanguage) {
+            return storageLanguage;
+        }
+    
         return userLanguage.startsWith('es') ? 'ES' : 'EN';
     });
 
@@ -20,12 +26,13 @@ export function AppProvider({ children }) {
 
         const timer = setTimeout(() => {
             setIsTransitioning(false);
-            setLanguage(language === 'ES' ? 'EN' : 'ES');
+            const activeLanguage = language === 'ES' ? 'EN' : 'ES';
+            setLanguage(activeLanguage);
+            localStorage.setItem("language", activeLanguage);
         }, 300);
     }
 
     const CONTENT = language === 'ES' ? ES : EN;
-
 
     const value = {
         language,

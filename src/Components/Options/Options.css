@@ -1,4 +1,4 @@
-.options{
+.options {
     position: fixed;
     left: auto;
     top: auto;
@@ -12,7 +12,7 @@
 }
 
 
-.options .menu{
+.options .menu {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,7 +27,7 @@
     z-index: 10;
     width: 40px;
     height: 40px;
-}    
+}
 
 .options .menu-item {
     top: auto;
