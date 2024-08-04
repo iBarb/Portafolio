@@ -104,6 +104,7 @@
     display: flex;
     gap: .5rem;
     margin-top: .5rem;
+    text-wrap: nowrap;
 }
 .Projects article .info .tags li{
     font-size: .75rem;
@@ -121,10 +122,6 @@
 
 .tags .bg-blue{
     background-color: #0b2744;
-}
-
-.tags .bg-grey{
-    background-color: #495969;
 }
 
 .tags .text-white{

@@ -21,7 +21,7 @@ const Projects = ({ setCurrentSection }) => {
                         <article key={p.id}>
                             <div className="out-div-img">
                                 <div className='out-img'>
-                                    <img src={p.image} alt={`Camtura de Pantalla de proyecto ${p.image}`}></img>
+                                    <img src={p.image} width={428} height={248} alt={`Camtura de Pantalla de proyecto ${p.image}`}></img>
                                 </div>
                             </div>
                             <div className='info'>
