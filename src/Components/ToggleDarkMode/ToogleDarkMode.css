@@ -1,0 +1,27 @@
+.DarkMode-btn{
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .3s;
+}
+
+.DarkMode-btn svg {
+    position: absolute;
+    top: auto;
+    left: auto;
+    bottom: auto;
+    right: auto;
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.DarkMode-btn svg.light-mode {
+    opacity: 1;
+}
+
+.DarkMode-btn svg.dark-mode {
+    opacity: 1;
+}

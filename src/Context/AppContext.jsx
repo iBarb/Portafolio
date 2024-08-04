@@ -9,7 +9,14 @@ export function useApp() {
 
 export function AppProvider({ children }) {
     const [isTransitioning, setIsTransitioning] = useState(false);
-
+    const [isDarkMode, setIsDarkMode] = useState(() => {
+        const storageDarkMode = localStorage.getItem("darkMode");
+        if (storageDarkMode) {
+            return storageDarkMode;
+        }
+        return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    })
+    
     const [language, setLanguage] = useState(() => {
         const storageLanguage = localStorage.getItem("language");
         const userLanguage = navigator.language || navigator.userLanguage;
@@ -20,6 +27,11 @@ export function AppProvider({ children }) {
     
         return userLanguage.startsWith('es') ? 'ES' : 'EN';
     });
+
+    const toggleDarkMode = () => {
+        setIsDarkMode(!isDarkMode);
+        localStorage.setItem("darkMode", !isDarkMode);
+    }
 
     const toggleLanguage = () => {
         setIsTransitioning(true);
@@ -38,7 +50,9 @@ export function AppProvider({ children }) {
         language,
         toggleLanguage,
         CONTENT,
-        isTransitioning
+        isTransitioning,
+        isDarkMode,
+        toggleDarkMode
     }
 
     return (

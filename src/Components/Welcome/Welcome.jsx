@@ -1,7 +1,7 @@
 import React from 'react'
 import Section from '../Section/Section'
 import './Welcome.css'
-import Avatar from '../../Assets/avatar.jpg'
+import Avatar from '/avatar.webp'
 import { useApp } from '../../Context/AppContext'
 
 const Welcome = ({ setCurrentSection }) => {
@@ -10,7 +10,7 @@ const Welcome = ({ setCurrentSection }) => {
     return (
         <Section className='welcome' id={CONTENT.WELCOME.id} setCurrentSection={setCurrentSection}>
             <div className='in-welcome'>
-                <div className='avatar'><img src={Avatar} alt="Bruno Barbaran" /></div>
+                <div className='avatar'><img src={Avatar} fetchPriority='high' height={250} width={250} alt="Bruno Barbaran" /></div>
                 <div className='profile'>
                     <div>
                         <h1>{CONTENT.WELCOME.heading}</h1>

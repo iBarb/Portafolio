@@ -7,6 +7,7 @@ import LinkedIn from "../Icons/LinkedIn"
 import Python from "../Icons/Python"
 import ReactIcon from "../Icons/ReactIcon"
 import MicrosoftSQLServer from "../Icons/SQLServer"
+import Tailwind from "../Icons/Tailwind"
 import { calcularEdad } from "./Functions"
 
 
@@ -48,6 +49,12 @@ export const TAGS = {
         className: "bg-blue text-white",
         icon: <FirebaseIcon width={10} height={10} />
     },
+    TAILWIND:{
+        id: 7,
+        name: "Tailwind",
+        className: "bg-blue text-white",
+        icon: <Tailwind width={10} height={10} />
+    }
 }
 
 export const ES = {
@@ -84,7 +91,7 @@ export const ES = {
         description: '<strong>Ingeniero de Software</strong> de Perú. Me especializo en <strong>desarrollo Front-end</strong>, pero actualmente me estoy enfocando más en <strong>inteligencia artificial</strong> y aprendiendo nuevas tecnologías para potenciar mi crecimiento profesional.',
         NETWORKS: [
             {
-                href: 'https://www.linkedin.com/in/bruno-paolo-barbaran-quiroz-606478195/',
+                href: 'https://www.linkedin.com/in/brunobarbaran/',
                 label: 'LinkedIn',
                 icon: <LinkedIn width={18} height={18} />
             },
@@ -120,10 +127,10 @@ export const ES = {
                 id: 1,
                 title: "Modelo NLP para Traducción Es-Qu",
                 description: "Se realizó una investigación para desarrollar y optimizar las traducciones entre español - quechua utilizando un modelo de procesamiento de lenguaje natural (NLP) preentrenado de Helsinki-NLP/opus-mt-es-en. Se utilizó Optuna para la optimización de hiperparámetros, con un enfoque en refinar los parámetros del modelo para mejorar la precisión de la traducción.",
-                link: "",
+                link: "https://translator-es-qu.web.app/",
                 github: "https://github.com/iBarb/Machine-Translation-Es-Qu",
                 image: "/projects/Taduccion-es-qu.webp",
-                tags: [TAGS.PYTHON, TAGS.HUGGING_FACE]
+                tags: [TAGS.PYTHON, TAGS.HUGGING_FACE, TAGS.REACT, TAGS.TAILWIND]
             },
             {
                 id: 2,
@@ -132,7 +139,7 @@ export const ES = {
                 link: "https://www.linkedin.com/posts/eco2biz_la-importancia-de-la-informaci%C3%B3n-georeferencial-activity-7163396183825047553-S_X7?utm_source=share&utm_medium=member_desktop",
                 github: "",
                 image: "/projects/Google Maps Module.webp",
-                tags: [TAGS.JAVASCRIPT, TAGS.SQLSERVER]
+                tags: [TAGS.JAVASCRIPT, TAGS.SQLSERVER, TAGS.PYTHON,]
             },
             {
                 id: 3,
@@ -187,7 +194,7 @@ export const EN = {
         description: '<strong>Software Engineer</strong> from Peru. I specialize in <strong>Front-end development</strong>, but I am currently focusing more on <strong>artificial intelligence</strong> and learning new technologies to enhance my professional growth.',
         NETWORKS: [
             {
-                href: 'https://www.linkedin.com/in/bruno-paolo-barbaran-quiroz-606478195/',
+                href: 'https://www.linkedin.com/in/brunobarbaran/',
                 label: 'LinkedIn',
                 icon: <LinkedIn width={18} height={18} />
             },
@@ -222,10 +229,10 @@ export const EN = {
                 id: 1,
                 title: "NLP Model for Es-Qu Translation",
                 description: "Research was conducted to develop and optimize translations between Spanish and Quechua using a pre-trained Helsinki-NLP/opus-mt-es-en natural language processing (NLP) model. Optuna was used for hyperparameter optimization, focusing on refining the model parameters to improve translation accuracy.",
-                link: "",
+                link: "https://translator-es-qu.web.app/",
                 github: "https://github.com/iBarb/Machine-Translation-Es-Qu",
                 image: "/projects/Taduccion-es-qu.webp",
-                tags: [TAGS.PYTHON, TAGS.HUGGING_FACE]
+                tags: [TAGS.PYTHON, TAGS.HUGGING_FACE, TAGS.REACT, TAGS.TAILWIND]
             },
             {
                 id: 2,
@@ -234,7 +241,7 @@ export const EN = {
                 link: "https://www.linkedin.com/posts/eco2biz_la-importancia-de-la-informaci%C3%B3n-georeferencial-activity-7163396183825047553-S_X7?utm_source=share&utm_medium=member_desktop",
                 github: "",
                 image: "/projects/Google Maps Module.webp",
-                tags: [TAGS.JAVASCRIPT, TAGS.SQLSERVER]
+                tags: [TAGS.JAVASCRIPT, TAGS.SQLSERVER, TAGS.PYTHON]
             },
             {
                 id: 3,

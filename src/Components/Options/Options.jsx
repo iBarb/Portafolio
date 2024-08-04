@@ -2,6 +2,7 @@ import React, { useRef, useState } from 'react'
 import './Options.css'
 import Settings from '../../Icons/Settings'
 import ToggleLanguage from '../ToggleLanguage/ToggleLanguage';
+import ToogleDarkMode from '../ToggleDarkMode/ToogleDarkMode';
 
 const Options = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -17,7 +18,7 @@ const Options = () => {
         // {
         //     id: 2,
         //     name: 'mode',
-        //     component: <Settings width={24} height={24} />,
+        //     component: <ToogleDarkMode/>,
         //     color: '#939393',
         // }
     ]

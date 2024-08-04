@@ -25,7 +25,7 @@
 
 .timeline-item::before{
     content: "";
-    border-color: #ffffff26;
+    border-color: var(--color-timeline);
     border-width: 1px;
     border-style: solid;
     height: 100%;
@@ -61,19 +61,19 @@
 }
 
 .subtitle{
-    color: rgb(255 255 255 / 1);
+    color: var(--text-color);
     font-weight: 600;
     font-size: 1.25rem;
     line-height: 1.75rem;
 }
 
 .date{
-    color: #fffc;
+    color: var(--color-subtitle);
     font-size: .875rem;
     line-height: 1.25rem;
 }
 .description{
-    color: rgb(209 213 219 / 1);
+    color: var(--color-subtitle);
     grid-column: span 3 / span 3;
     padding-bottom: 1rem;
     gap: .5rem;

@@ -1,11 +1,36 @@
 :root {
     --bg-color: #02030e;
+    --opacity-bg-color: rgba(2, 3, 14, 0.7);
     --text-color: #ffffff;
     --font-family: 'Onest Variable', system-ui, sans-serif;
     --primary-color: #27a6e0;
-    --primary-color-hover: #88e9ff;
-    --bg-nav: 255, 255, 255
+    --primary-color-hover: #60dbf8;
+    --strong-color: #60dbf8;
+    --bg-nav: 255, 255, 255;
+    --color-subtitle: #d1d5db;
+    --color-timeline: #ffffff26;
+    --bg-networks-link: #1f2937;
+    --border-networks-link: #4b5563;
+    --color-networks-link: #fff;
+    --bg-tags-tag: #0b2744;
 }
+
+/* [data-bs-theme=dark]  {
+    --bg-color: #02030e;
+    --opacity-bg-color: rgba(2, 3, 14, 0.7);
+    --text-color: #ffffff;
+    --font-family: 'Onest Variable', system-ui, sans-serif;
+    --primary-color: #27a6e0;
+    --primary-color-hover: #60dbf8;
+    --strong-color: #60dbf8;
+    --bg-nav: 255, 255, 255;
+    --color-subtitle: #d1d5db;
+    --color-timeline: #ffffff26;
+    --bg-networks-link: #1f2937;
+    --border-networks-link: #4b5563;
+    --color-networks-link: #fff;
+    --bg-tags-tag: #0b2744;
+} */
 
 html {
     background-color: var(--bg-color);
@@ -116,6 +141,6 @@ ul {
 }
 
 .bg {
-    background-image: radial-gradient(ellipse 80% 90% at 50% 00%, rgba(120, 119, 198, 0.3), rgba(255, 255, 255, 0));
+    background-image: radial-gradient(ellipse 80% 90% at 50% 00%, rgba(120, 119, 198, 0.3), #00000000);
     z-index: -1
 }
