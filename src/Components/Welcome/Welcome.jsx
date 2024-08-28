@@ -13,7 +13,8 @@ const Welcome = ({ setCurrentSection }) => {
                 <div className='avatar'><img src={Avatar} fetchPriority='high' height={250} width={250} alt="Bruno Barbaran" /></div>
                 <div className='profile'>
                     <div>
-                        <h1>{CONTENT.WELCOME.heading}</h1>
+                        <h1 className='d-none'>Bruno Paolo Barbaran Quiroz</h1>
+                        <h2 className='h1'>{CONTENT.WELCOME.heading}</h2>
                         <p dangerouslySetInnerHTML={{ __html: CONTENT.WELCOME.description }} />
                     </div>
                 </div>
