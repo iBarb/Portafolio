@@ -111,13 +111,22 @@ export const ES = {
     EXPERIENCE: {
         id: 'experiencia',
         heading: 'Experiencia laboral',
-        TIMELINE: [{
-            id: 1,
-            title: "Desarrollador Web",
-            subtitle: "Eco2biz",
-            description: "Responsable de la implementación de un modulo con Google Maps para reducir el tiempo de ubicación de estaciones de monitoreo, la creación de un asistente virtual con IA para acelerar la eficiencia de búsqueda de documentos a travez de preguntas con leguaje natural y Diseño de un mapa meteorológico para visualización de resultados de monitoreo y análisis de datos.",
-            date: "Oct. 2022 - Dic. 2023",
-        }],
+        TIMELINE: [
+            {
+                id: 1,
+                title: "Coordinador Area Desarrollo",
+                subtitle: "CECOM SJL",
+                description: "Lideré la implementación de sistemas para el control de asistencia, seguimiento de radios Tetra y validación del personal municipal, mejorando la gestión, seguridad y transparencia. Supervisé el mantenimiento y mejora de aplicaciones municipales.",
+                date: "Sep. 2024 - Actualidad",
+            },
+            {
+                id: 2,
+                title: "Desarrollador Web",
+                subtitle: "Eco2biz",
+                description: "Responsable de la implementación de un modulo con Google Maps para reducir el tiempo de ubicación de estaciones de monitoreo, la creación de un asistente virtual con IA para acelerar la eficiencia de búsqueda de documentos a travez de preguntas con leguaje natural y Diseño de un mapa meteorológico para visualización de resultados de monitoreo y análisis de datos.",
+                date: "Oct. 2022 - Dic. 2023",
+            }
+        ],
     },
     PROJECTS: {
         id: 'proyectos',
@@ -229,13 +238,22 @@ export const EN = {
     EXPERIENCE: {
         id: 'experience',
         heading: 'Work Experience',
-        TIMELINE: [{
-            id: 1,
-            title: "Web Developer",
-            subtitle: "Eco2biz",
-            description: "Responsible for implementing a module with Google Maps to reduce the time for locating monitoring stations, creating a virtual assistant with AI to enhance document search efficiency through natural language questions, and designing a weather map for visualizing monitoring results and data analysis.",
-            date: "Oct. 2022 - Dec. 2023",
-        }],
+        TIMELINE: [
+            {
+                id: 1,
+                title: "Development Area Coordinator",
+                subtitle: "CECOM SJL",
+                description: "Led the implementation of systems for attendance control, Tetra radio tracking, and municipal staff validation, improving management, security, and transparency. Supervised the maintenance and improvement of municipal applications.",
+                date: "Sep. 2024 - Present",
+            },
+            {
+                id: 2,
+                title: "Web Developer",
+                subtitle: "Eco2biz",
+                description: "Responsible for implementing a module with Google Maps to reduce the time needed to locate monitoring stations, creating an AI virtual assistant to enhance document search efficiency through natural language queries, and designing a meteorological map for monitoring result visualization and data analysis.",
+                date: "Oct. 2022 - Dec. 2023",
+            }
+        ],
     },
     PROJECTS: {
         id: 'projects',
