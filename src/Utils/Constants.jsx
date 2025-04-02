@@ -49,7 +49,7 @@ export const TAGS = {
         className: "bg-blue text-white",
         icon: <FirebaseIcon width={10} height={10} />
     },
-    TAILWIND:{
+    TAILWIND: {
         id: 7,
         name: "Tailwind",
         className: "bg-blue text-white",
@@ -106,7 +106,7 @@ export const ES = {
                 icon: <CV width={18} height={18} />
             }
         ]
-        
+
     },
     EXPERIENCE: {
         id: 'experiencia',
@@ -125,6 +125,22 @@ export const ES = {
         PROJECTS: [
             {
                 id: 1,
+                title: "identidad SJL",
+                description: "Plataforma web que permite a los vecinos de San Juan de Lurigancho verificar rápidamente si una persona que llega a su domicilio en nombre de la municipalidad es un trabajador autorizado. Utiliza la inteligencia artificial de Axxon con reconocimiento facial para buscar en la base de datos de Gestiona-te. Además, ofrece la opción de reportar irregularidades, fortaleciendo la seguridad y confianza en la comunidad.",
+                link: "https://identidad.munisjl.gob.pe/",
+                image: "/projects/identidad-SJL.webp",
+                tags: [TAGS.JAVASCRIPT, TAGS.REACT, TAGS.TAILWIND]
+            },
+            {
+                id: 2,
+                title: "Gestiona-Te",
+                description: "Sistema integral que optimiza la administración del personal municipal, con módulos de control de asistencia, gestión de empleados y reclutamiento. Incorpora tecnologías avanzadas como el reconocimiento facial y pruebas psicológicas para evaluar el perfil de los postulantes, asegurando precisión y eficiencia en la gestión de recursos humanos.",
+                link: "https://www.linkedin.com/posts/gunminiho_me-alegra-compartir-que-he-trabajado-en-este-ugcPost-7312256404470333440-FmiT?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC3PMGYBrobu-cPnPFB9o3EHEYCSQ0pmc7k",
+                image: "/projects/gestiona-te.webp",
+                tags: [TAGS.JAVASCRIPT, TAGS.REACT, TAGS.TAILWIND]
+            },
+            {
+                id: 3,
                 title: "Modelo NLP para Traducción Es-Qu",
                 description: "Se realizó una investigación para desarrollar y optimizar las traducciones entre español - quechua utilizando un modelo de procesamiento de lenguaje natural (NLP) preentrenado de Helsinki-NLP/opus-mt-es-en. Se utilizó Optuna para la optimización de hiperparámetros, con un enfoque en refinar los parámetros del modelo para mejorar la precisión de la traducción.",
                 link: "https://translator-es-qu.web.app/",
@@ -133,7 +149,7 @@ export const ES = {
                 tags: [TAGS.PYTHON, TAGS.HUGGING_FACE, TAGS.REACT, TAGS.TAILWIND]
             },
             {
-                id: 2,
+                id: 4,
                 title: "Georeferencia en la Gestión Ambiental",
                 description: "Desarrollé un sistema integral con Google Maps para localizar estaciones de monitoreo y puntos de acopio, además de realizar seguimiento meteorológico. Incluye una plataforma de visualización de datos con diagramas Stiff para análisis de calidad del agua y mapas de calor para gestionar situaciones de excedencia.",
                 link: "https://www.linkedin.com/posts/eco2biz_la-importancia-de-la-informaci%C3%B3n-georeferencial-activity-7163396183825047553-S_X7?utm_source=share&utm_medium=member_desktop",
@@ -142,7 +158,7 @@ export const ES = {
                 tags: [TAGS.JAVASCRIPT, TAGS.SQLSERVER, TAGS.PYTHON,]
             },
             {
-                id: 3,
+                id: 5,
                 title: "Sistema de Asesorias UTP - EducaUTP",
                 description: "Diseño de una aplicación web para gestionar asesorias en la UTP, utilizando React Context para la autenticación segura y manejo avanzado de estados, Firebase para almacenamiento en tiempo real, y diseñé una interfaz intuitiva y responsive.Además, manejo de variables de entorno para keys",
                 link: "https://educautp.web.app/",
@@ -155,7 +171,7 @@ export const ES = {
     ABOUT_ME: {
         id: 'sobre-mi',
         heading: 'Sobre mi',
-        p1: `Me llamo <strong>Bruno Paolo Barbaran Quiroz</strong>, tengo <strong>${calcularEdad('2001-07-21')} años</strong> y soy de Perú. Egresado de la <strong>Universidad Tecnológica del Perú</strong>. Tengo sólidos conocimientos en <strong>tecnologías frontend y backend</strong>, y un nivel intermedio de inglés. Además, estoy interesado en desarrollarme en áreas como <strong>inteligencia artificial</strong> y <strong>desarrollo web</strong>.`,
+        p1: `Me llamo <strong>Bruno Paolo Barbaran Quiroz</strong>, tengo <strong>${calcularEdad('2001-07-21')} años</strong> y soy de Perú. Bachiller de la <strong>Universidad Tecnológica del Perú</strong>. Tengo sólidos conocimientos en <strong>tecnologías frontend y backend</strong>, y un nivel intermedio de inglés. Además, estoy interesado en desarrollarme en áreas como <strong>inteligencia artificial</strong> y <strong>desarrollo web</strong>.`,
         p2: `Como apasionado de la tecnología, siempre busco aprender nuevas herramientas que puedan ayudarme en mi crecimiento profesional. También tengo certificado de <strong>tutor STEM en Algorítmica</strong> y fui miembro de la <strong>comunidad Microsoft UTP</strong>.`
     },
 }
@@ -227,6 +243,22 @@ export const EN = {
         PROJECTS: [
             {
                 id: 1,
+                title: "Identidad SJL",
+                description: "A web platform that allows residents of San Juan de Lurigancho to quickly verify if a person arriving at their home on behalf of the municipality is an authorized worker. It utilizes Axxon's artificial intelligence with facial recognition to search the Gestiona-te database. Additionally, it offers the option to report irregularities, strengthening security and trust within the community.",
+                link: "https://identidad.munisjl.gob.pe/",
+                image: "/projects/identidad-SJL.webp",
+                tags: [TAGS.JAVASCRIPT, TAGS.REACT, TAGS.TAILWIND]
+            },
+            {
+                id: 2,
+                title: "Gestiona-Te",
+                description: "A comprehensive system that optimizes municipal staff management, featuring modules for attendance control, employee management, and recruitment. It incorporates advanced technologies such as facial recognition and psychological tests to assess applicant profiles, ensuring accuracy and efficiency in human resource management.",
+                link: "https://www.linkedin.com/posts/gunminiho_me-alegra-compartir-que-he-trabajado-en-este-ugcPost-7312256404470333440-FmiT?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC3PMGYBrobu-cPnPFB9o3EHEYCSQ0pmc7k",
+                image: "/projects/gestiona-te.webp",
+                tags: [TAGS.JAVASCRIPT, TAGS.REACT, TAGS.TAILWIND]
+            },
+            {
+                id: 3,
                 title: "NLP Model for Es-Qu Translation",
                 description: "Research was conducted to develop and optimize translations between Spanish and Quechua using a pre-trained Helsinki-NLP/opus-mt-es-en natural language processing (NLP) model. Optuna was used for hyperparameter optimization, focusing on refining the model parameters to improve translation accuracy.",
                 link: "https://translator-es-qu.web.app/",
@@ -235,7 +267,7 @@ export const EN = {
                 tags: [TAGS.PYTHON, TAGS.HUGGING_FACE, TAGS.REACT, TAGS.TAILWIND]
             },
             {
-                id: 2,
+                id: 4,
                 title: "Georeferencing in Environmental Management",
                 description: "Developed a comprehensive system with Google Maps to locate monitoring stations and collection points, as well as to conduct meteorological tracking. Includes a data visualization platform with Stiff diagrams for water quality analysis and heat maps to manage exceedance situations.",
                 link: "https://www.linkedin.com/posts/eco2biz_la-importancia-de-la-informaci%C3%B3n-georeferencial-activity-7163396183825047553-S_X7?utm_source=share&utm_medium=member_desktop",
@@ -244,7 +276,7 @@ export const EN = {
                 tags: [TAGS.JAVASCRIPT, TAGS.SQLSERVER, TAGS.PYTHON]
             },
             {
-                id: 3,
+                id: 5,
                 title: "UTP Counseling System - EducaUTP",
                 description: "Designed a web application to manage counseling at UTP, using React Context for secure authentication and advanced state management, Firebase for real-time storage, and created an intuitive and responsive interface. Additionally, managed environment variables for keys.",
                 link: "https://educautp.web.app/",
@@ -257,7 +289,7 @@ export const EN = {
     ABOUT_ME: {
         id: 'about-me',
         heading: 'About Me',
-        p1: `My name is <strong>Bruno Paolo Barbaran Quiroz</strong>, I am <strong>${calcularEdad('2001-07-21')} years old</strong>, and I am from Peru. I graduated from <strong>Universidad Tecnológica del Perú</strong>. I have solid knowledge in <strong>frontend and backend technologies</strong>, and an intermediate level of English. Additionally, I am interested in developing in areas such as <strong>artificial intelligence</strong> and <strong>web development</strong>.`,
+        p1: `My name is <strong>Bruno Paolo Barbaran Quiroz</strong>, I am <strong>${calcularEdad('2001-07-21')} years old</strong>, and I am from Peru. I have a bachelor's degree from <strong>Universidad Tecnológica del Perú</strong>. I have solid knowledge in <strong>frontend and backend technologies</strong>, and an intermediate level of English. Additionally, I am interested in developing in areas such as <strong>artificial intelligence</strong> and <strong>web development</strong>.`,
         p2: `As a technology enthusiast, I am always looking to learn new tools that can aid in my professional growth. I also have a certificate as a <strong>STEM tutor in Algorithmics</strong> and was a member of the <strong>Microsoft UTP community</strong>.`
     }
 }
