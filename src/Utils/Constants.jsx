@@ -112,19 +112,19 @@ export const ES = {
         id: 'experiencia',
         heading: 'Experiencia laboral',
         TIMELINE: [
-            {
-                id: 1,
-                title: "Fullstack Freelance",
-                subtitle: "BestHomeOffer",
-                description: "Desarrollé una plataforma inmobiliaria orientada a optimizar la venta de propiedades, combinando rendimiento, seguridad y experiencia de usuario. Usé React, Tailwind, Material UI, React Query, Formik y Yup para un frontend moderno y validaciones efectivas. En el backend, construí una API en Express con medidas de seguridad como CORS y rate limiting. Integré Cloudflare para cacheo, mitigación de ataques y mejora del tiempo de respuesta.",
-                date: "Jun. 2025 - Jun. 2025",
-            },
+            // {
+            //     id: 1,
+            //     title: "Fullstack Freelance",
+            //     subtitle: "BestHomeOffer",
+            //     description: "Desarrollé una plataforma inmobiliaria orientada a optimizar la venta de propiedades, combinando rendimiento, seguridad y experiencia de usuario. Usé React, Tailwind, Material UI, React Query, Formik y Yup para un frontend moderno y validaciones efectivas. En el backend, construí una API en Express con medidas de seguridad como CORS y rate limiting. Integré Cloudflare para cacheo, mitigación de ataques y mejora del tiempo de respuesta.",
+            //     date: "Jun. 2025 - Jun. 2025",
+            // },
             {
                 id: 2,
                 title: "Coordinador Area Desarrollo",
                 subtitle: "CECOM SJL",
                 description: "Lideré la implementación de sistemas para el control de asistencia, seguimiento de radios Tetra y validación del personal municipal, mejorando la gestión, seguridad y transparencia. Supervisé el mantenimiento y mejora de aplicaciones municipales.",
-                date: "Sep. 2024 - Actualidad",
+                date: "Sep. 2024 - sep. 2025",
             },
             {
                 id: 3,
@@ -139,14 +139,14 @@ export const ES = {
         id: 'proyectos',
         heading: 'Proyectos',
         PROJECTS: [
-            {
-                id: 1,
-                title: "Best Home Offer",
-                description: "Plataforma inmobiliaria que simplifica el proceso de venta de propiedades. Permite a los propietarios recibir una oferta rápida, segura y sin trámites innecesarios. No se requieren reparaciones ni intermediarios. las propiedades se adquieren en su estado actual, sin comisiones ni costos ocultos. Una solución práctica y eficiente para quienes buscan evitar las complicaciones del modelo tradicional.",
-                link: "https://besthomeoffer.ai/",
-                image: "/projects/besthomeoffer.webp",
-                tags: [TAGS.JAVASCRIPT, TAGS.REACT, TAGS.TAILWIND]
-            },
+            // {
+            //     id: 1,
+            //     title: "Best Home Offer",
+            //     description: "Plataforma inmobiliaria que simplifica el proceso de venta de propiedades. Permite a los propietarios recibir una oferta rápida, segura y sin trámites innecesarios. No se requieren reparaciones ni intermediarios. las propiedades se adquieren en su estado actual, sin comisiones ni costos ocultos. Una solución práctica y eficiente para quienes buscan evitar las complicaciones del modelo tradicional.",
+            //     link: "https://besthomeoffer.ai/",
+            //     image: "/projects/besthomeoffer.webp",
+            //     tags: [TAGS.JAVASCRIPT, TAGS.REACT, TAGS.TAILWIND]
+            // },
             {
                 id: 2,
                 title: "identidad SJL",
@@ -254,19 +254,19 @@ export const EN = {
         id: 'experience',
         heading: 'Work Experience',
         TIMELINE: [
-            {
-                id: 1,
-                title: "Fullstack Freelance",
-                subtitle: "BestHomeOffer",
-                description: "I developed a real estate platform focused on optimizing property sales by combining performance, security, and user experience. I used React, Tailwind, Material UI, React Query, Formik, and Yup to build a modern frontend with effective validations. On the backend, I built an API with Express, implementing security measures such as CORS and rate limiting. I also integrated Cloudflare for caching, attack mitigation, and improved response times.",
-                date: "Jun. 2025 - Jun. 2025"
-            },
+            // {
+            //     id: 1,
+            //     title: "Fullstack Freelance",
+            //     subtitle: "BestHomeOffer",
+            //     description: "I developed a real estate platform focused on optimizing property sales by combining performance, security, and user experience. I used React, Tailwind, Material UI, React Query, Formik, and Yup to build a modern frontend with effective validations. On the backend, I built an API with Express, implementing security measures such as CORS and rate limiting. I also integrated Cloudflare for caching, attack mitigation, and improved response times.",
+            //     date: "Jun. 2025 - Jun. 2025"
+            // },
             {
                 id: 2,
                 title: "Development Area Coordinator",
                 subtitle: "CECOM SJL",
                 description: "Led the implementation of systems for attendance control, Tetra radio tracking, and municipal staff validation, improving management, security, and transparency. Supervised the maintenance and improvement of municipal applications.",
-                date: "Sep. 2024 - Present",
+                date: "Sep. 2024 - Sep. 2025",
             },
             {
                 id: 3,
@@ -281,14 +281,14 @@ export const EN = {
         id: 'projects',
         heading: 'Projects',
         PROJECTS: [
-            {
-                id: 1,
-                title: "Best Home Offer",
-                description: "Real estate platform that simplifies the property selling process. Allows homeowners to receive a fast, secure offer without unnecessary paperwork. No repairs or intermediaries are required—properties are purchased as-is, with no commissions or hidden fees. A practical and efficient solution for those looking to avoid the complications of the traditional model.",
-                link: "https://besthomeoffer.ai/",
-                image: "/projects/besthomeoffer.webp",
-                tags: [TAGS.JAVASCRIPT, TAGS.REACT, TAGS.TAILWIND]
-            },
+            // {
+            //     id: 1,
+            //     title: "Best Home Offer",
+            //     description: "Real estate platform that simplifies the property selling process. Allows homeowners to receive a fast, secure offer without unnecessary paperwork. No repairs or intermediaries are required—properties are purchased as-is, with no commissions or hidden fees. A practical and efficient solution for those looking to avoid the complications of the traditional model.",
+            //     link: "https://besthomeoffer.ai/",
+            //     image: "/projects/besthomeoffer.webp",
+            //     tags: [TAGS.JAVASCRIPT, TAGS.REACT, TAGS.TAILWIND]
+            // },
             {
                 id: 2,
                 title: "Identidad SJL",

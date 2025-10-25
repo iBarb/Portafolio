@@ -15,6 +15,14 @@
     --bg-tags-tag: #0b2744;
 }
 
+section h1,
+article h1,
+aside h1,
+nav h1 {
+    font-size: 2rem;
+    /* o el tamaño que tú desees */
+}
+
 /* [data-bs-theme=dark]  {
     --bg-color: #02030e;
     --opacity-bg-color: rgba(2, 3, 14, 0.7);
@@ -100,18 +108,19 @@ ul {
     color: #c5c5c5
 }
 
-.content{
+.content {
     transition: all .3s;
 }
 
-.content.fade-out{
+.content.fade-out {
     opacity: 0;
 }
 
-.content.fade-in{
+.content.fade-in {
     opacity: 1;
 }
-.d-none{
+
+.d-none {
     display: none;
 }
 
