@@ -8,6 +8,9 @@ import Python from "../Icons/Python"
 import ReactIcon from "../Icons/ReactIcon"
 import MicrosoftSQLServer from "../Icons/SQLServer"
 import Tailwind from "../Icons/Tailwind"
+import Flutter from "../Icons/Flutter"
+import Java from "../Icons/Java"
+import NodeJS from "../Icons/NodeJS"
 import { calcularEdad } from "./Functions"
 
 
@@ -54,6 +57,24 @@ export const TAGS = {
         name: "Tailwind",
         className: "bg-blue text-white",
         icon: <Tailwind width={10} height={10} />
+    },
+    FLUTTER: {
+        id: 8,
+        name: "Flutter",
+        className: "bg-blue text-white",
+        icon: <Flutter width={10} height={10} />
+    },
+    JAVA: {
+        id: 9,
+        name: "Java",
+        className: "bg-blue text-white",
+        icon: <Java width={10} height={10} />
+    },
+    NODEJS: {
+        id: 10,
+        name: "Node.js",
+        className: "bg-blue text-white",
+        icon: <NodeJS width={10} height={10} />
     }
 }
 
@@ -88,7 +109,7 @@ export const ES = {
     WELCOME: {
         id: '',
         heading: '¡Hola, soy Bruno!',
-        description: '<strong>Ingeniero de Software</strong> de Perú. Me especializo en <strong>desarrollo Front-end</strong>, pero actualmente me estoy enfocando más en <strong>inteligencia artificial</strong> y aprendiendo nuevas tecnologías para potenciar mi crecimiento profesional.',
+        description: '<strong>Ingeniero de Software</strong> de Perú con más de 3 años de experiencia desarrollando aplicaciones <strong>móviles (Flutter)</strong> y soluciones web <strong>Full Stack</strong>.',
         NETWORKS: [
             {
                 href: 'https://www.linkedin.com/in/brunobarbaran/',
@@ -112,6 +133,20 @@ export const ES = {
         id: 'experiencia',
         heading: 'Experiencia laboral',
         TIMELINE: [
+            {
+                id: 4,
+                title: "Software Architect",
+                subtitle: "Altoken.io",
+                description: "Plataforma fintech/proptech de tokenización de activos inmobiliarios. Diseñé la arquitectura del sistema e implementé la tokenización de activos RWA sobre Hedera Hashgraph. Desarrollé las REST APIs y el backend en Node.js, construí la wallet digital para inversores, diseñé el flujo de KYC/onboarding y el frontend con React y TypeScript.",
+                date: "Oct. 2025 - Actualidad",
+            },
+            {
+                id: 5,
+                title: "Analista Programador FullStack",
+                subtitle: "CESEL Ingenieros",
+                description: "Rediseño de la arquitectura del aplicativo móvil Portal Cesel utilizando Flutter y Clean Architecture. Implementé autenticación biométrica y PIN, desarrollé un módulo completo de rendiciones de gastos y migré el pipeline OCR a una solución local con PaddleOCR. Construí un scraper de SUNAT para consulta de proveedores y diseñé el backend con microservicios en Java (Spring Boot).",
+                date: "Nov. 2025 - Actualidad",
+            },
             // {
             //     id: 1,
             //     title: "Fullstack Freelance",
@@ -139,6 +174,22 @@ export const ES = {
         id: 'proyectos',
         heading: 'Proyectos',
         PROJECTS: [
+            {
+                id: 7,
+                title: "Altoken",
+                description: "Plataforma fintech/proptech de tokenización de RWA (Real-World Assets) sobre Hedera Hashgraph. Incluye wallet digital para inversores, flujo avanzado de KYC/onboarding, backend en Node.js y un panel frontend desarrollado con React y TypeScript.",
+                link: "https://www.altoken.io/es",
+                image: "/projects/altoken.webp",
+                tags: [TAGS.REACT, TAGS.NODEJS, TAGS.JAVASCRIPT, TAGS.TAILWIND]
+            },
+            {
+                id: 8,
+                title: "Portal Cesel",
+                description: "Aplicativo corporativo móvil con Clean Architecture en Flutter para gestión de gastos. Incluye motor de aprobación, OCR in-house con PaddleOCR para comprobantes de pago, un scraper de SUNAT y backend basado en microservicios Java (Spring Boot).",
+                link: "",
+                image: "/projects/portal-cesel.webp",
+                tags: [TAGS.FLUTTER, TAGS.JAVA, TAGS.PYTHON]
+            },
             // {
             //     id: 1,
             //     title: "Best Home Offer",
@@ -195,8 +246,8 @@ export const ES = {
     ABOUT_ME: {
         id: 'sobre-mi',
         heading: 'Sobre mi',
-        p1: `Me llamo <strong>Bruno Paolo Barbaran Quiroz</strong>, tengo <strong>${calcularEdad('2001-07-21')} años</strong> y soy de Perú. Bachiller de la <strong>Universidad Tecnológica del Perú</strong>. Tengo sólidos conocimientos en <strong>tecnologías frontend y backend</strong>, y un nivel intermedio de inglés. Además, estoy interesado en desarrollarme en áreas como <strong>inteligencia artificial</strong> y <strong>desarrollo web</strong>.`,
-        p2: `Como apasionado de la tecnología, siempre busco aprender nuevas herramientas que puedan ayudarme en mi crecimiento profesional. También tengo certificado de <strong>tutor STEM en Algorítmica</strong> y fui miembro de la <strong>comunidad Microsoft UTP</strong>.`
+        p1: `Me llamo <strong>Bruno Paolo Barbaran Quiroz</strong>, tengo <strong>${calcularEdad('2001-07-21')} años</strong> y soy de Perú. Titulado en Ingeniería de Software por la <strong>Universidad Tecnológica del Perú</strong>. Cuento con más de 3 años de experiencia construyendo aplicaciones móviles con <strong>Flutter</strong> y soluciones web <strong>Full Stack</strong>, además de poseer un nivel intermedio de inglés técnico.`,
+        p2: `Me especializo en arquitecturas limpias, integraciones de sistemas complejos y automatización de procesos utilizando <strong>IA y OCR local</strong>. Siempre busco aprender nuevas herramientas tecnológicas para potenciar mi crecimiento profesional y el impacto de los proyectos en los que participo.`
     },
 }
 
@@ -231,7 +282,7 @@ export const EN = {
     WELCOME: {
         id: '',
         heading: 'Hey, I’m Bruno!',
-        description: '<strong>Software Engineer</strong> from Peru. I specialize in <strong>Front-end development</strong>, but I am currently focusing more on <strong>artificial intelligence</strong> and learning new technologies to enhance my professional growth.',
+        description: '<strong>Software Engineer</strong> from Peru with 3+ years of experience building <strong>mobile apps (Flutter)</strong> and <strong>Full Stack</strong> web solutions.',
         NETWORKS: [
             {
                 href: 'https://www.linkedin.com/in/brunobarbaran/',
@@ -254,6 +305,20 @@ export const EN = {
         id: 'experience',
         heading: 'Work Experience',
         TIMELINE: [
+            {
+                id: 4,
+                title: "Software Architect",
+                subtitle: "Altoken.io",
+                description: "Fintech / proptech platform for real estate asset tokenization. Designed system architecture and implemented Real-World Asset (RWA) tokenization on Hedera Hashgraph. Built the REST APIs and Node.js backend with SDK integration, developed a digital wallet for investors, architected the KYC onboarding flow, and built the frontend using React and TypeScript.",
+                date: "Oct. 2025 - Present",
+            },
+            {
+                id: 5,
+                title: "FullStack Programmer Analyst",
+                subtitle: "CESEL Ingenieros",
+                description: "Redesign of the Portal Cesel mobile app architecture using Flutter and Clean Architecture. Implemented PIN and biometric authentication, developed an end-to-end expense report module, and migrated the document OCR pipeline to a local PaddleOCR solution. Built a SUNAT scraper for automated supplier lookup and engineered a Java (Spring Boot) microservices backend.",
+                date: "Nov. 2025 - Present",
+            },
             // {
             //     id: 1,
             //     title: "Fullstack Freelance",
@@ -281,6 +346,22 @@ export const EN = {
         id: 'projects',
         heading: 'Projects',
         PROJECTS: [
+            {
+                id: 7,
+                title: "Altoken",
+                description: "Fintech/proptech platform for RWA (Real-World Assets) tokenization on Hedera Hashgraph. Features a digital wallet for investors, advanced KYC/onboarding flows, a Node.js backend, and a React & TypeScript frontend dashboard.",
+                link: "https://www.altoken.io/es",
+                image: "/projects/altoken.webp",
+                tags: [TAGS.REACT, TAGS.NODEJS, TAGS.JAVASCRIPT, TAGS.TAILWIND]
+            },
+            {
+                id: 8,
+                title: "Portal Cesel",
+                description: "Corporate mobile app built with Clean Architecture in Flutter for expense management. Features an approval engine, in-house OCR with PaddleOCR for receipts, a SUNAT scraper, and a Microservices backend in Java (Spring Boot).",
+                link: "",
+                image: "/projects/portal-cesel.webp",
+                tags: [TAGS.FLUTTER, TAGS.JAVA, TAGS.PYTHON]
+            },
             // {
             //     id: 1,
             //     title: "Best Home Offer",
@@ -337,7 +418,7 @@ export const EN = {
     ABOUT_ME: {
         id: 'about-me',
         heading: 'About Me',
-        p1: `My name is <strong>Bruno Paolo Barbaran Quiroz</strong>, I am <strong>${calcularEdad('2001-07-21')} years old</strong>, and I am from Peru. I have a bachelor's degree from <strong>Universidad Tecnológica del Perú</strong>. I have solid knowledge in <strong>frontend and backend technologies</strong>, and an intermediate level of English. Additionally, I am interested in developing in areas such as <strong>artificial intelligence</strong> and <strong>web development</strong>.`,
-        p2: `As a technology enthusiast, I am always looking to learn new tools that can aid in my professional growth. I also have a certificate as a <strong>STEM tutor in Algorithmics</strong> and was a member of the <strong>Microsoft UTP community</strong>.`
+        p1: `My name is <strong>Bruno Paolo Barbaran Quiroz</strong>, I am <strong>${calcularEdad('2001-07-21')} years old</strong>, and I am from Peru. I hold a Professional Degree in Software Engineering from <strong>Universidad Tecnológica del Perú</strong>. I bring 3+ years of experience building mobile applications with <strong>Flutter</strong> and <strong>Full Stack</strong> web solutions, alongside an upper-intermediate level of English.`,
+        p2: `I specialize in clean architectures, complex system integrations, and process automation using <strong>AI and local OCR</strong>. I am always looking to learn new technological tools to enhance my professional growth and deepen the impact of the projects I am involved in.`
     }
 }
