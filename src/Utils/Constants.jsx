@@ -202,7 +202,7 @@ export const ES = {
                 id: 2,
                 title: "identidad SJL",
                 description: "Plataforma web que permite a los vecinos de San Juan de Lurigancho verificar rápidamente si una persona que llega a su domicilio en nombre de la municipalidad es un trabajador autorizado. Utiliza la inteligencia artificial de Axxon con reconocimiento facial para buscar en la base de datos de Gestiona-te. Además, ofrece la opción de reportar irregularidades, fortaleciendo la seguridad y confianza en la comunidad.",
-                link: "https://identidad.munisjl.gob.pe/",
+                link: "",
                 image: "/projects/identidad-SJL.webp",
                 tags: [TAGS.JAVASCRIPT, TAGS.REACT, TAGS.TAILWIND]
             },
@@ -236,7 +236,7 @@ export const ES = {
                 id: 6,
                 title: "Sistema de Asesorias UTP - EducaUTP",
                 description: "Diseño de una aplicación web para gestionar asesorias en la UTP, utilizando React Context para la autenticación segura y manejo avanzado de estados, Firebase para almacenamiento en tiempo real, y diseñé una interfaz intuitiva y responsive.Además, manejo de variables de entorno para keys",
-                link: "https://educautp.web.app/",
+                link: "",
                 github: "https://github.com/iBarb/EducaUTP-Web",
                 image: "/projects/educaUTP.webp",
                 tags: [TAGS.REACT, TAGS.FIREBASE]
@@ -374,7 +374,7 @@ export const EN = {
                 id: 2,
                 title: "Identidad SJL",
                 description: "A web platform that allows residents of San Juan de Lurigancho to quickly verify if a person arriving at their home on behalf of the municipality is an authorized worker. It utilizes Axxon's artificial intelligence with facial recognition to search the Gestiona-te database. Additionally, it offers the option to report irregularities, strengthening security and trust within the community.",
-                link: "https://identidad.munisjl.gob.pe/",
+                link: "",
                 image: "/projects/identidad-SJL.webp",
                 tags: [TAGS.JAVASCRIPT, TAGS.REACT, TAGS.TAILWIND]
             },
@@ -408,7 +408,7 @@ export const EN = {
                 id: 6,
                 title: "UTP Counseling System - EducaUTP",
                 description: "Designed a web application to manage counseling at UTP, using React Context for secure authentication and advanced state management, Firebase for real-time storage, and created an intuitive and responsive interface. Additionally, managed environment variables for keys.",
-                link: "https://educautp.web.app/",
+                link: "",
                 github: "https://github.com/iBarb/EducaUTP-Web",
                 image: "/projects/educaUTP.webp",
                 tags: [TAGS.REACT, TAGS.FIREBASE]
